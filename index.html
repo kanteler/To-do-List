@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles_todolist.css">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="todolist.js"></script>
+</head>
+<body>
+    
+    <h1 id="myHeader">TO DO List</h1>
+
+<!-- STEPs 1 and 2 below here  -->
+<input type="button"
+       id="addButton"
+       value="Add"
+       onclick="addTask()"><br>
+<input type="text"
+       id="input"
+       placeholder="Enter  task...">
+
+<hr>
+    
+<ul id="tasks">
+  <li>
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    make todo list
+  </li>
+  
+    </ul>
+<hr>
+<!-- STEPs 8 and 9 below here  -->
+<div id='divabout'></div>
+<button type='button'
+        id='about'
+        onclick='doAbout()'>About</button>
+ <!-- STEP 13 below here  -->
+<button type='button'
+        id='clear'
+        onclick='clearAbout()'>
+  Clear</button>
+    
+</body>
+</html>
