@@ -22,9 +22,11 @@ ul {
   /* Step 5 below here */
   .done {
     background: green;
+    border-radius: 5px;
   }
   .remove {
     background: red;
+    border-radius: 5px;
   }
   
   /* mark task as finished */
